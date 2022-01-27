@@ -1,0 +1,21 @@
+@font-face {
+	font-family: 'Metro';
+	src: url('fonts/Metro.eot');
+	src: local('fonts/Metro Regular'), local('Metro'),
+		url('fonts/Metro.eot?#iefix') format('embedded-opentype'),
+		url('fonts/Metro.woff') format('woff'),
+		url('fonts/Metro.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Metro';
+	src: url('fonts/Metro-Bold.eot');
+	src: local('Metro  Bold'), local('Metro-Bold'),
+		url('fonts/Metro-Bold.eot?#iefix') format('embedded-opentype'),
+		url('fonts/Metro-Bold.woff') format('woff'),
+		url('fonts/Metro-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ugadayka</title>
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/png">
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="fonts.css">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://use.fontawesome.com/0442002eff.js"></script>
+</head>
+<body>
+
+<!-- ИГРА -->
+<main class="main">
+	<section class="main__content content">
+		<div class="content__inner">
+			<div class="content__game game">
+				<div class="game__inner">
+					<section class="game__slide loadscreen">
+						<h1 class="game__h1">
+							Угадай мелодию
+						</h1>
+						<div class="loadscreen__bottom">
+							<div class="loadscreen__message">
+								Пожалуйста, подождите...
+							</div>
+							<div class="loadscreen__loading-wrapper">
+								<div class="loadscreen__loading loading"></div>
+							</div>
+						</div>
+					</section>
+					<section class="game__slide mode">
+						<h2 class="game__h2 game__text_center">Выбери режим игры</h2>
+						<div class="mode__choice">
+							<div class="mode__item">
+								<div class="mode__button label-button mode__genre">
+				        			<img class="label-button__img" src="img/game_mode1.jpg" alt="">
+				        			<div class="label-button__name">Жанры</div>
+				        		</div>
+							</div>
+							<div class="mode__item">
+								<div class="mode__button label-button mode__playlist">
+				        			<img class="label-button__img" src="img/game_mode2.jpg" alt="">
+				        			<div class="label-button__name">Плейлисты</div>
+				        		</div>
+							</div>
+							<div class="mode__item">
+								<div class="mode__button label-button mode__mymusic">
+				        			<img class="label-button__img" src="img/game_mode3.webp" alt="">
+				        			<div class="label-button__name">Моя музыка</div>
+				        		</div>
+							</div>
+						</div>
+					</section>
+					<section class="game__slide my-playlist">
+						<p class="my-playlist__info">
+							1. Зайди в Deezer и найди понравившийся тебе плейлист
+							<br>
+							2. Открой станицу этого плейлиста
+							<br>
+							3. Скопируй ИЗ АДРЕСНОЙ СТРОКИ ссылку и вставь в поле ниже
+							<br>
+							Пример ссылки:
+							<br>
+							<span class='my-playlist__example'>https://www.deezer.com/ru/playlist/5954591804</span>
+							<br>
+							4. Угадывай свои любимые мелодии :)
+						</p>
+						<p class="my-playlist__error">Неправильная ссылка!</p>
+						<input type="text" class="my-playlist__input">
+						<div class="my-playlist__go">Поехали!</div>
+					</section>
+					<section class="game__slide genre">
+						<h2 class="game__h2 game__text_center">Выбери жанр</h2>
+						<div class="genre__carousel carousel">
+							<div class="carousel__left">
+								<i class="fa fa-chevron-left" aria-hidden="true"></i>
+							</div>
+							<div class="carousel__inner">
+								<div class="carousel__slides">
+									
+								</div>
+							</div>
+							<div class="carousel__right">
+								<i class="fa fa-chevron-right" aria-hidden="true"></i>
+							</div>
+						</div>
+					</section>
+					<section class="game__slide playlist">
+						<h2 class="game__h2 game__text_center">Выбери плейлист</h2>
+						<div class="playlist__carousel carousel">
+							<div class="carousel__left">
+								<i class="fa fa-chevron-left" aria-hidden="true"></i>
+							</div>
+							<div class="carousel__inner">
+								<div class="carousel__slides">
+									<div class="playlist__item carousel__slide">
+										<div class="playlist__button label-button">
+						        			<img class="label-button__img" src="img/game_mode3.webp" alt="">
+						        			<div class="label-button__name"></div>
+						        			<div class="label-button__play">
+						        				<div class="label-button__play-btn">
+						        					<i class="fa fa-play" aria-hidden="true"></i>
+						        				</div>
+						        			</div>
+						        		</div>
+									</div>
+									<div class="carousel__slide">
+										2
+									</div>
+								</div>
+							</div>
+							<div class="carousel__right">
+								<i class="fa fa-chevron-right" aria-hidden="true"></i>
+							</div>
+						</div>
+					</section>
+					<section class="game__slide round">
+						<div class="round__inner">
+							<div class="round__gif-block">
+								<div class="round__gif-wrapper">
+									<img src="img/dance1.gif" alt="playing" class="round__gif" data-num="1">
+								</div>
+								<div class="round__gif-wrapper">
+									<img src="img/dance2.gif" alt="playing" class="round__gif" data-num="2">
+								</div>
+								<div class="round__gif-wrapper">
+									<img src="img/dance3.gif" alt="playing" class="round__gif" data-num="3">
+								</div>
+								<div class="round__gif-wrapper">
+									<img src="img/dance4.gif" alt="playing" class="round__gif" data-num="4">
+								</div>
+								<div class="round__gif-wrapper">
+									<img src="img/dance5.gif" alt="playing" class="round__gif" data-num="5">
+								</div>
+								<div class="round__gif-wrapper">
+									<img src="img/dance6.gif" alt="playing" class="round__gif" data-num="6">
+								</div>
+								<div class="round__gif-wrapper">
+									<img src="img/dance7.gif" alt="playing" class="round__gif" data-num="7">
+								</div>
+								<div class="round__gif-wrapper">
+									<img src="img/dance8.gif" alt="playing" class="round__gif" data-num="8">
+								</div>
+								<div class="round__gif-wrapper">
+									<img src="img/dance9.gif" alt="playing" class="round__gif" data-num="9">
+								</div>
+								<div class="round__gif-wrapper">
+									<img src="img/dance10.gif" alt="playing" class="round__gif" data-num="10">
+								</div>
+								<div class="round__gif-wrapper">
+									<img src="img/dance11.gif" alt="playing" class="round__gif" data-num="11">
+								</div>
+								<div class="round__gif-wrapper">
+									<img src="img/dance12.gif" alt="playing" class="round__gif" data-num="12">
+								</div>
+								<div class="round__gif-wrapper">
+									<img src="img/dance13.gif" alt="playing" class="round__gif" data-num="13">
+								</div>
+								<div class="round__gif-wrapper">
+									<img src="img/dance14.gif" alt="playing" class="round__gif" data-num="14">
+								</div>
+								<!-- <div class="round__gif-wrapper">
+									<img src="img/dance15.gif" alt="playing" class="round__gif" data-num="15">
+								</div>
+								<div class="round__gif-wrapper">
+									<img src="img/dance16.gif" alt="playing" class="round__gif" data-num="16">
+								</div> -->
+							</div>
+							<div class="round__answers">
+								<div class="round__answer answer" data-index="0">
+									<div class="answer__inner">
+										<div class="answer__label">
+											<img src="img/download.png" alt="label" class="answer__img">
+										</div>
+										<div class="answer__text">
+											<div class="answer__track">track0</div>
+											<div class="answer__artist">artist0</div>
+										</div>
+									</div>
+								</div>
+								<div class="round__answer answer" data-index="1">
+									<div class="answer__inner">
+										<div class="answer__label">
+											<img src="img/download.png" alt="label" class="answer__img">
+										</div>
+										<div class="answer__text">
+											<div class="answer__track">track1</div>
+											<div class="answer__artist">artist1</div>
+										</div>
+									</div>
+								</div>
+								<div class="round__answer answer" data-index="2">
+									<div class="answer__inner">
+										<div class="answer__label">
+											<img src="img/download.png" alt="label" class="answer__img">
+										</div>
+										<div class="answer__text">
+											<div class="answer__track">track2</div>
+											<div class="answer__artist">artist2</div>
+										</div>
+									</div>
+								</div>
+								<div class="round__answer answer" data-index="3">
+									<div class="answer__inner">
+										<div class="answer__label">
+											<img src="img/download.png" alt="label" class="answer__img">
+										</div>
+										<div class="answer__text">
+											<div class="answer__track">track3</div>
+											<div class="answer__artist">artist3</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="game__slide endround">
+						<div class="endround__inner">
+							<div class="endround__info">
+								<h3 class="endround__result endround__result_win">Верно!</h3>
+								<div class="endround__correct">
+									<div class="endround__answer answer" data-index="1">
+										<div class="answer__inner">
+											<div class="answer__label">
+												<img src="img/download.png" alt="label" class="answer__img">
+											</div>
+											<div class="answer__text">
+												<div class="answer__track">track1</div>
+												<div class="answer__artist">artist1</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="endround__btns">
+								<div class="endround__like endround__like_deleted">
+									<i class="fa fa-heart-o" aria-hidden="true"></i>
+								</div>
+								<div class="endround__message"></div>
+								<div class="endround__next">
+									<i class="fa fa-chevron-right" aria-hidden="true"></i>
+								</div>
+								<div class="endround__empty"></div>
+							</div>
+						</div>
+					</section>
+					<section class="game__slide endgame">
+						<div class="endgame__inner">
+							<div class="endgame__congrats">
+								<h3 class="endgame__h3">Поздравляем!</h3>
+							</div>
+							<div class="endgame__result">
+								<div class="endgame__counter">Всего песен проиграно: <span class="endgame__all">0</span></div>
+								<div class="endgame__counter">Угадано: <span class="endgame__win">0</span></div>
+								<div class="endgame__counter">Не угадано: <span class="endgame__lose">0</span></div>
+								<div class="endgame__counter">Пропущено: <span class="endgame__pass">0</span></div>
+							</div>
+						</div>
+					</section>
+
+					<!-- absolute элементы -->
+					<section class="game__addition game__menu game-menu">
+						<h3 class="game-menu__h3"><span class="game-menu__mode"></span><span class="game-menu__playlist"></span></h3>
+						<div class="game-menu__inner">
+							<div class="game-menu__item endthisgame"><i class="fa fa-sign-out" aria-hidden="true"></i></div>
+							<div class="game-menu__item total"><span class="total__position"></span>/<span class="total__all"></span></div>
+							<div class="game-menu__item counter"></div>
+							<div class="game-menu__item leaver"><i class="fa fa-bars" aria-hidden="true"></i></div>
+						</div>
+					</section>
+					<section class="game__addition game__program-panel program-panel">
+						<div class="program-panel__inner">
+							<div class="program-panel__item program-panel__easy-mode">Легко</div>
+							<div class="program-panel__item program-panel__mode">Песни</div>
+						</div>
+					</section>
+					<section class="game__addition game__loading">
+						<div class="loading"></div>
+					</section>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ПЛЕЕР -->
+	<section class="main__bottom-bar bottom-bar">
+		<div class="bottom-bar__content">
+			<div class="bottom-bar__progress">
+				<span class="bottom-bar__progress-line"></span>
+			</div>
+			<div class="bottom-bar__inner">
+				<div class="bottom-bar__player-promo">
+					<img class="bottom-bar__promo" src="img/Barb0SSa_light_bold.png" alt="Barb0SSa">
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ПЛЕЕР -->
+</main>
+<!-- ИГРА -->
+
+<audio src="#" class="audio"></audio>
+
+<script src="script/functions.js"></script>
+<script src='script/carousel.js'></script>
+<script src="script/bd.js"></script>
+<script src="script/game.js"></script>
+<script src="script/window.js"></script>
+
+</body>
+</html>

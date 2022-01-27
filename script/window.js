@@ -1,0 +1,11 @@
+showSlide('mode');
+showAdditions('game__menu');
+hide('endthisgame');
+hide('total');
+hide('counter');
+document.querySelector('.game-menu__mode').innerHTML = 'Выберите режим';
+document.querySelector('.game-menu__playlist').innerHTML = '';
+loading(false);
+game.bindMode();
+game.printLabels();
+show('program-panel');
